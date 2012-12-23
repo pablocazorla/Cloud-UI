@@ -1,47 +1,9 @@
 @charset "UTF-8";
 
-/* DEFINITIONS ***************************************************/
-
-// bluesky, for header, buttons, etc.
-.bluesky{
-  color:#FFF !important;
-  .gradient(#1EACFF,#0091E5);
-}
-
-/* BASICS ****************************************************/
-
-// Body
-body{
-  background:#EEE;
-  font-family:'Segoe UI',Arial, sans-serif;
-  color:#333;
-}
-h1,h2,h3,h4,h5,h6{
-  color:#000;
-  font-weight:bold;
-}
-a{
-  color:blue;
-}
-
-// LAYOUT ********************************/
-// Header
-header{
- .bluesky;
-}
-header h1,
-header h2,
-header h3,
-header h4,
-header h5,
-header h6,
-header a{
-  color:#FFF;
-}
 
 // Header Menu
 header menu > li ul:after{
-  .triangle();
+  //.triangle();
 }
 header menu > li ul{
   border:solid 1px #CCC;
@@ -49,22 +11,13 @@ header menu > li ul{
   .shadow(0 1px 5px rgba(0,0,0,.3));
   .rounded(6px);
 }
-header menu > li ul a{
-  .gradient(#FFF,#EEE);
-  color:#333;
+header menu > li > ul  a{
+  background:#333;
+  color:#FFF;
   border-bottom:solid 1px #DDD;
 }
 header menu > li ul li:first-child a{.rounded(6px 6px 0 0);}
 header menu > li ul li:last-child a{.rounded(0 0 6px 6px);}
-// Box
-.box{
-  background:#FFF;
-  border-color:#CCC;
-}
 
-//Float
-.float{
-  .shadow(0 2px 4px rgba(0,0,0,.2));
-}
 
 

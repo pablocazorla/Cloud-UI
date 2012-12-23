@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+body{
+  font-size:14px;
+  line-height:1.3em;
+}
+
+h1,h2,h3,h4,h5,h6{
+  padding: 15px 20px;
+}
+h1{
+  font-size:45px;line-height:45px;
+}
+h2{
+  font-size:30px;line-height:30px;
+}
+h3{
+  font-size:24px;line-height:24px;
+}
+h4{
+  font-size:18px;line-height:18px;
+  padding: 10px 20px;
+}
+h5{
+  font-size:15px;line-height:15px;
+  padding: 5px 20px;
+}
+h6{
+  font-size:13px;line-height:13px;
+  padding: 5px 20px;
+}
+p,.list,ol{
+  padding: 0 20px;
+  margin-bottom:15px;
+}
+
+
+a,a:link{text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+/* list */
+ul.list{
+	list-style: outside disc;padding-left:40px;
+}
+ul.list li{
+	margin-bottom:10px;
+}
+ul.list ul{
+	list-style: outside circle;padding-left:20px;
+}
+ul.list ul ul{
+	list-style: outside square;
+}
+ol,ol.list{
+	list-style: outside decimal;padding-left:40px;
+}
+ol li{
+	margin-bottom:10px;
+}
+
+hr{border:none;height:0;margin:15px 20px; border-top:solid 1px #EEE;}
+
+
+table.data{
+	width:85%;
+	margin: 0 20px 15px;
+	text-align: left;
+}
+
+
+/* LAYOUT ********************************/
+/* Header */
+header{
+  height:50px;
+  margin-bottom:15px;
+  background: #EEE;
+}
+header h1{
+  font-size:30px;
+}
+header h1,
+header h2,
+header h3,
+header h4,header h5,header h6{
+  line-height:50px;
+  padding-top:0;
+  padding-bottom:0;
+  float:left;
+}
+
+/* Header Menu */
+header menu{
+  float:right;
+}
+header menu li{
+  position:relative;
+}
+header menu li ul{
+  position:absolute;
+  z-index:2;
+  background: #FFF;
+  border:solid 1px #EEE;border-top:none;
+  zdisplay:none;
+  opacity:0;
+  top:-99999px;
+  
+  transition: opacity .3s ease;
+  -moz-transition: opacity .3s ease;
+  -webkit-transition: opacity .3s ease;
+}
+header menu li a{
+  display:block;
+  line-height:50px;
+  font-size:16px;
+  padding:0 15px;
+  text-align:center;
+}
+
+
+header menu > li{
+  float:left;
+}
+
+header menu > li > ul{  
+  right:0;
+  
+}
+header menu > li > ul li ul{  
+  left:-182px;
+}
+header menu > li > ul a{  
+  width:150px;
+}
+
+header menu > li:hover > ul{
+  top:50px;opacity:1;
+}
+header menu > li > ul > li:hover > ul{
+  top:0;opacity:1;
+}
+
+
+
